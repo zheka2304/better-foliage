@@ -1,0 +1,12 @@
+{
+    "better-foliage": {
+        "leaves": [
+            {"texture": "better-foliage/leaves_acacia_0.png"},
+            {"texture": "better-foliage/leaves_big_oak_0.png"},
+            {"texture": "better-foliage/leaves_birch_0.png"},
+            {"texture": "better-foliage/leaves_jungle_0.png"},
+            {"texture": "better-foliage/leaves_oak_0.png"},
+            {"texture": "better-foliage/leaves_spruce_0.png"}
+        ]
+    }
+}

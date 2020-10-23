@@ -1,0 +1,102 @@
+{
+    "properties": {
+        "enabled": {
+            "name": {"en": "Enable mod", "ru": "Включить мод"},
+            "index": 0
+        },
+
+        "leaves": {
+            "name": {"en": "Leaves", "ru": "Листья"},
+            "collapsible": true,
+            "index": 1
+        },
+
+        "grass": {
+            "name": {"en": "Grass", "ru": "Трава"},
+            "collapsible": true,
+            "index": 2
+        },
+
+        "reed": {
+            "name": {"en": "Reed", "ru": "Тростник"},
+            "collapsible": true,
+            "index": 3
+        },
+
+        "leaves.enabled": {
+            "name": {"en": "Enabled", "ru": "Включить"},
+            "index": 4
+        },
+
+        "grass.enabled": {
+            "name": {"en": "Enabled", "ru": "Включить"},
+            "index": 5
+        },
+
+        "reed.enabled": {
+            "name": {"en": "Enabled", "ru": "Включить"},
+            "index": 6
+        },
+
+        "leaves.density": {
+            "name": {"en": "Density", "ru": "Плотность"},
+            "index": 7,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 3
+        },
+
+        "grass.density": {
+            "name": {"en": "Density", "ru": "Плотность"},
+            "index": 8,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 3
+        },
+
+        "reed.density": {
+            "name": {"en": "Density", "ru": "Плотность"},
+            "index": 9,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 3
+        },
+
+        "leaves.variant_count": {
+            "name": {"en": "Model variant count", "ru": "Кол-во вариантов модели"},
+            "description": {"en": "This amount of variants will be randomly chosen from all possible model variants", "ru": "Это кол-во моделей будет случайным образом выбрано из всех возможных вариаций моделей"},
+            "index": 10,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 16
+        },
+
+        "grass.variant_count": {
+            "name": {"en": "Model variant count", "ru": "Кол-во вариантов модели"},
+            "description": {"en": "This amount of variants will be randomly chosen from all possible model variants", "ru": "Это кол-во моделей будет случайным образом выбрано из всех возможных вариаций моделей"},
+            "index": 11,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 16
+        },
+
+        "reed.variant_count": {
+            "name": {"en": "Model variant count", "ru": "Кол-во вариантов модели"},
+            "description": {"en": "This amount of variants will be randomly chosen from all possible model variants", "ru": "Это кол-во моделей будет случайным образом выбрано из всех возможных вариаций моделей"},
+            "index": 12,
+            "type": "SeekBar",
+            "min": 1,
+            "max": 48
+        },
+
+        "leaves.rich_model": {
+            "name": {"en": "Rich model", "ru": "Детализированая модель"},
+            "index": 13
+        },
+
+        "grass.ignore_top_block": {
+            "name": {"en": "Ignore Block Above Grass", "ru": "Игнорировать блок выше блока травы"},
+            "index": 14
+        }
+   }
+}

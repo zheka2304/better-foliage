@@ -1,0 +1,11 @@
+{
+    "shared": {
+        "name": "betterfoliage",
+        "include": []
+    },
+
+    "depends": [
+    	"innercore",
+    	"nativejs"
+	]
+}

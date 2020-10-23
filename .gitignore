@@ -1,0 +1,11 @@
+toolchain/build
+toolchain/ndk
+output
+mod.icmod
+tsconfig.json
+.idea
+.vscode
+.settings
+.classpath
+.project
+**/__pycache__
