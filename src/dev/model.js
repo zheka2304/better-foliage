@@ -53,6 +53,17 @@ class VariantModelGenerator {
         return allPartVariants;
     }
 
+    fullyClosedCondition(group, invert) {
+        let top = new ICRender.BLOCK(0, 1, 0, group, false);
+        let bottom = new ICRender.BLOCK(0, -1, 0, group, false);
+        let right = new ICRender.BLOCK(1, 0, 0, group, false);
+        let left = new ICRender.BLOCK(-1, 0, 0, group, false);
+        let back = new ICRender.BLOCK(0, 0, 1, group, false);
+        let front = new ICRender.BLOCK(0, 0, -1, group, false);
+        let fullCondition = new ICRender.AND(top, left, bottom, right, front, back);
+        return invert ? new ICRender.NOT(fullCondition) : fullCondition;
+    }
+
     buildAllParts(model, condition, totalModelVariants, seed) {
         var allPartVariants = this.getAllPartVariants();
         var maxTotalVariants = 1;
