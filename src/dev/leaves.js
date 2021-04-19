@@ -99,19 +99,22 @@ class LeavesModel extends VariantModelGenerator {
         }
 
         var icRender;
+        var leavesGroup = ICRender.getUnnamedGroup();
         if (oldModel) {
             icRender = oldModel;
         } else {
             icRender = new ICRender.Model();
             var baseModel = new BlockRenderer.Model();
             baseModel.addBlock(id, data != -1 ? data : 0);
-            icRender.addEntry(baseModel);
+            var entry = icRender.addEntry(baseModel);
+            leavesGroup.add(id, data)
+            entry.setCondition(this.fullyClosedCondition(leavesGroup, true))
         }
 
         ItemModel.getFor(id, data != -1 ? data : 0).occupy();
         BlockRenderer.setStaticICRender(id, data, icRender);
 
-        this.buildAllParts(icRender, null, variantCount);
+        this.buildAllParts(icRender, this.fullyClosedCondition(leavesGroup, true), variantCount);
     }
 }
 
