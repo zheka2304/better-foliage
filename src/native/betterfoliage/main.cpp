@@ -21,13 +21,13 @@ public:
         // hook leaves renderlayer
         HookManager::addCallback(SYMBOL("mcpe", "_ZNK9LeafBlock14getRenderLayerERK5BlockR11BlockSourceRK8BlockPos"), LAMBDA((HookManager::CallbackController* controller), {
             controller->replace(); // call this to override renderlayer, otherwise original method is called and result 1 is ignored
-            return 3;
+            return 4;
         }, ), HookManager::CALL | HookManager::LISTENER | HookManager::CONTROLLER | HookManager::RESULT); 
 
         // hook leaves renderlayer
         HookManager::addCallback(SYMBOL("mcpe", "_ZNK12OldLeafBlock14getRenderLayerERK5BlockR11BlockSourceRK8BlockPos"), LAMBDA((HookManager::CallbackController* controller), {
             controller->replace(); // call this to override renderlayer, otherwise original method is called and result 1 is ignored
-            return 3;
+            return 4;
         }, ), HookManager::CALL | HookManager::LISTENER | HookManager::CONTROLLER | HookManager::RESULT); 
         
     }
