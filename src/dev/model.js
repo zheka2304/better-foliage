@@ -186,7 +186,8 @@ function addPolyToMesh(mesh, vertices) {
                 mesh.setColor(v[5], v[6], v[7], 1);
             }
         }
-        mesh.addVertex(v[0], v[1], v[2], v[3], v[4]);
+        let someRandom = Math.random() / 10;
+        mesh.addVertex(v[0] + someRandom, v[1], v[2] + someRandom, v[3], v[4]);
     }
 
     var v0 = vertices[0];
