@@ -3,18 +3,18 @@
 		"info": {
 			"name": "Better Foliage",
 			"author": "Eugene Smirnov",
-			"version": "1.02 alpha",
+			"version": "1.03 alpha",
 			"description": "Decorative mod, that improves leaves, grass and other foliage"
 		},
 		"api": "CoreEngine"
 	},
 	"make": {
 		"debugAbi": "armeabi-v7a",
-		"abis": ["armeabi-v7a", "x86"],
+		"abis": ["armeabi-v7a"],
 		"linkNative": ["minecraftpe", "innercore", "nativejs"],
 		"excludeFromRelease": [],
-		"pushTo": "storage/emulated/0/games/horizon/packs/innercore-dev/innercore/mods/better-foliage",
-		"ndkPath": null
+		"pushTo": "storage/emulated/0/games/horizon/packs/innercore-dev-116/innercore/mods/better-foliage",
+		"ndkPath": "C:/Users/zheka/AppData/Local/Android/Sdk/ndk/16.1.4479499"
 	},
 	"resources": [
 		{
